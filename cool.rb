@@ -1,9 +1,9 @@
 # write a function that accepts one parameter, location
 def location_coolchecker(user_location)
-	if user_location == "brooklyn"
-		puts("You are SO COOL.")
-	elsif user_location == "manhattan"
-		puts("You are cool.")
+	if user_location == "brooklyn" or user_location == "manhattan"
+		puts("You are SO cool.")
+	elsif user_location == "queens" or user_location == "the bronx"
+		puts("You are kind of cool.")
 	else
 		puts("You're not cool.")
 	end
@@ -15,11 +15,4 @@ user_location = gets.strip
 
 location_coolchecker(user_location)
 
-#if the location is equal to brooklyn, show the user a message "you are so cool"
-#if the location is equal to manhattan, show the user a message "you are cool"
-#in all other circumstances, show a message that says "you are not cool" 
 
-# ask the user for where they live
-# store that information in a variable
-
-# call the fuction
