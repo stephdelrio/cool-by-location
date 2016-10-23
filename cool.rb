@@ -4,14 +4,20 @@ def location_coolchecker(user_location)
 		puts("You are SO cool.")
 	elsif user_location == "queens" or user_location == "the bronx"
 		puts("You are kind of cool.")
+
+	elsif user_location == "long island" and user_occupation = "bartender"
+		puts("You're weird.")
+
 	else
 		puts("You're not cool.")
 	end
 end
 
 puts("Where do you live?")
-
 user_location = gets.strip
+
+puts("What's your occupation?")
+user_occupation = gets.strip
 
 location_coolchecker(user_location)
 
